@@ -1,3 +1,11 @@
-{"registoryVersion": 1,
-  "effects" []
+{
+  "registryVersion": 1,
+  "effects": [
+    {
+      "id": "vhs",
+      "name": "VHS",
+      "version": "1.0.0",
+      "metadata": "effects/vhs/effect.json"
+    }
+  ]
 }
