@@ -145,6 +145,24 @@
         "shader": "0433d60787873872625e2fe4473bc6ecc70b383cad9d6820d75b012ccde0a766",
         "preview": "62cb030ec78e6bd59dea5788b76e1f0829432cdc620c882ce490231fec2d16aa"
       }
+    },
+    {
+      "id": "prism_bloom",
+      "name": "Prism Bloom",
+      "description": "Cinematic highlight bloom that softly diffuses bright areas with an adjustable color halo.",
+      "version": "1.0.0",
+      "category": "stylize",
+      "tags": [
+        "bloom",
+        "glow",
+        "cinematic",
+        "light",
+        "highlight",
+        "stylize"
+      ],
+      "preview": "effects/prism_bloom/preview.webp",
+      "metadata": "effects/prism_bloom/effect.json",
+      "sha256": {}
     }
   ]
 }
