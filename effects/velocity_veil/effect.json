@@ -1,0 +1,82 @@
+{
+  "id": "velocity_veil",
+  "name": "Velocity Veil",
+  "description": "Directional movement softness that smooths fast pans, zooms, rotations, and animated overlays.",
+  "author": "ozonerepublic74d77777",
+  "license": "Edactor",
+  "version": "1.0.0",
+  "category": "stylize",
+  "tags": ["motion", "blur", "directional", "speed", "action"],
+  "shader": "velocity_veil.glsl",
+  "preview": "preview.webp",
+  "parameters": [
+    {
+      "id": "uAmount",
+      "name": "Amount",
+      "description": "Controls the total blur distance in pixels.",
+      "type": "float",
+      "min": 0.0,
+      "max": 40.0,
+      "default": 16.0
+    },
+    {
+      "id": "uDirection",
+      "name": "Direction",
+      "description": "Sets the fallback blur direction when host motion vectors are unavailable.",
+      "type": "vec2",
+      "default": [1.0, 0.0]
+    },
+    {
+      "id": "uSamples",
+      "name": "Samples",
+      "description": "Sets the number of texture samples used for the blur quality.",
+      "type": "int",
+      "min": 2.0,
+      "max": 8.0,
+      "default": 6.0
+    },
+    {
+      "id": "uPositionInfluence",
+      "name": "Position Influence",
+      "description": "Controls how strongly positional movement contributes to the blur.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0
+    },
+    {
+      "id": "uScaleInfluence",
+      "name": "Scale Influence",
+      "description": "Controls how strongly zooming or scaling contributes to the blur.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5
+    },
+    {
+      "id": "uRotationInfluence",
+      "name": "Rotation Influence",
+      "description": "Controls how strongly rotation contributes to the blur.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5
+    },
+    {
+      "id": "uMix",
+      "name": "Mix",
+      "description": "Blends the motion-softened result with the original frame.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0
+    }
+  ],
+  "compatibility": {
+    "minRegistryVersion": 1,
+    "minAppVersion": "1.0.0",
+    "platforms": ["android"],
+    "shaderLanguage": "glsl-es-100",
+    "requiredExtensions": ["GL_OES_EGL_image_external"]
+  }
+}
