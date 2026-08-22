@@ -163,6 +163,91 @@
       "preview": "effects/prism_bloom/preview.webp",
       "metadata": "effects/prism_bloom/effect.json",
       "sha256": {}
+    },
+    {
+      "id": "mirror_orbit",
+      "name": "Mirror Orbit",
+      "description": "Animated radial reflection that turns footage into a symmetrical kaleidoscopic pattern.",
+      "version": "1.0.0",
+      "category": "stylize",
+      "tags": [
+        "kaleidoscope",
+        "mirror",
+        "radial",
+        "psychedelic",
+        "stylize"
+      ],
+      "preview": "effects/mirror_orbit/preview.webp",
+      "metadata": "effects/mirror_orbit/effect.json",
+      "sha256": {}
+    },
+    {
+      "id": "velocity_veil",
+      "name": "Velocity Veil",
+      "description": "Directional movement softness that smooths fast pans, zooms, rotations, and animated overlays.",
+      "version": "1.0.0",
+      "category": "stylize",
+      "tags": [
+        "motion",
+        "blur",
+        "directional",
+        "speed",
+        "action"
+      ],
+      "preview": "effects/velocity_veil/preview.webp",
+      "metadata": "effects/velocity_veil/effect.json",
+      "sha256": {}
+    },
+    {
+      "id": "impact_tremor",
+      "name": "Impact Tremor",
+      "description": "Short controlled camera tremor for beat hits, impacts, title landings, and energetic cuts.",
+      "version": "1.0.0",
+      "category": "stylize",
+      "tags": [
+        "shake",
+        "impact",
+        "beat",
+        "camera",
+        "energy"
+      ],
+      "preview": "effects/impact_tremor/preview.webp",
+      "metadata": "effects/impact_tremor/effect.json",
+      "sha256": {}
+    },
+    {
+      "id": "neon_trace",
+      "name": "Neon Trace",
+      "description": "Glowing contour treatment that turns strong image edges into colored neon lines.",
+      "version": "1.0.0",
+      "category": "stylize",
+      "tags": [
+        "neon",
+        "edges",
+        "outline",
+        "glow",
+        "cyberpunk"
+      ],
+      "preview": "effects/neon_trace/preview.webp",
+      "metadata": "effects/neon_trace/effect.json",
+      "sha256": {}
+    },
+    {
+      "id": "warp_surge",
+      "name": "Warp Surge",
+      "description": "Focal zoom-streak treatment for push-through transitions, beat drops, and energetic scene entrances.",
+      "version": "1.0.0",
+      "category": "stylize",
+      "tags": [
+        "zoom",
+        "streak",
+        "transition",
+        "radial",
+        "speed"
+      ],
+      "preview": "effects/warp_surge/preview.webp",
+      "metadata": "effects/warp_surge/effect.json",
+      "sha256": {}
     }
   ]
 }
