@@ -1,0 +1,56 @@
+name: Package release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate registry and effects
+        run: python3 scripts/validate_registry.py
+
+      - name: Update file checksums
+        run: python3 scripts/update_checksums.py
+
+      - name: Stamp revision into registry.json
+        run: |
+          python3 - <<'EOF'
+          import json
+
+          with open("registry.json") as f:
+              registry = json.load(f)
+
+          registry["revision"] = "${{ github.sha }}"
+          registry["updatedAt"] = "${{ github.event.head_commit.timestamp }}"
+
+          with open("registry.json", "w") as f:
+              json.dump(registry, f, indent=2)
+              f.write("\n")
+          EOF
+
+      - name: Package effects
+        run: |
+          mkdir -p dist
+          for dir in effects/*/; do
+            id=$(basename "$dir")
+            (cd "$dir" && zip -r "../../dist/${id}.zip" .)
+          done
+          cp registry.json dist/
+          (cd dist && sha256sum *.zip registry.json > SHA256SUMS.txt)
+          ls -la dist/
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/*.zip
+            dist/registry.json
+            dist/SHA256SUMS.txt
+          generate_release_notes: true
