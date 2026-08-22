@@ -1,0 +1,91 @@
+{
+  "id": "warp_surge",
+  "name": "Warp Surge",
+  "description": "Focal zoom-streak treatment for push-through transitions, beat drops, and energetic scene entrances.",
+  "author": "ozonerepublic74d77777",
+  "license": "Edactor",
+  "version": "1.0.0",
+  "category": "stylize",
+  "tags": ["zoom", "streak", "transition", "radial", "speed"],
+  "shader": "warp_surge.glsl",
+  "preview": "preview.webp",
+  "parameters": [
+    {
+      "id": "uAmount",
+      "name": "Amount",
+      "description": "Controls the total focal displacement in pixels.",
+      "type": "float",
+      "min": 0.0,
+      "max": 80.0,
+      "default": 32.0
+    },
+    {
+      "id": "uCenter",
+      "name": "Focal Point",
+      "description": "Sets the point toward which the frame surges or from which it pulls away.",
+      "type": "vec2",
+      "default": [0.5, 0.5]
+    },
+    {
+      "id": "uStreakLength",
+      "name": "Streak Length",
+      "description": "Controls the length of the radial blur trail along the surge direction.",
+      "type": "float",
+      "min": 0.25,
+      "max": 2.0,
+      "default": 1.0
+    },
+    {
+      "id": "uSamples",
+      "name": "Samples",
+      "description": "Sets the number of radial samples used to form the streak.",
+      "type": "int",
+      "min": 2.0,
+      "max": 10.0,
+      "default": 8.0
+    },
+    {
+      "id": "uDirection",
+      "name": "Direction",
+      "description": "Chooses between an inward surge and an outward pull.",
+      "type": "bool",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0
+    },
+    {
+      "id": "uProgress",
+      "name": "Progress",
+      "description": "Drives the effect from its starting state to its full transition state.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0
+    },
+    {
+      "id": "uEase",
+      "name": "Ease",
+      "description": "Shapes how quickly the surge reaches its full strength.",
+      "type": "float",
+      "min": 0.2,
+      "max": 4.0,
+      "default": 1.5
+    },
+    {
+      "id": "uEdgeMode",
+      "name": "Wrap Edges",
+      "description": "Wraps samples around the frame edges when enabled instead of clamping them.",
+      "type": "bool",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    }
+  ],
+  "compatibility": {
+    "minRegistryVersion": 1,
+    "minAppVersion": "1.0.0",
+    "platforms": ["android"],
+    "shaderLanguage": "glsl-es-100",
+    "requiredExtensions": ["GL_OES_EGL_image_external"]
+  }
+}
