@@ -1,0 +1,84 @@
+{
+  "id": "impact_tremor",
+  "name": "Impact Tremor",
+  "description": "Short controlled camera tremor for beat hits, impacts, title landings, and energetic cuts.",
+  "author": "ozonerepublic74d77777",
+  "license": "Edactor",
+  "version": "1.0.0",
+  "category": "stylize",
+  "tags": ["shake", "impact", "beat", "camera", "energy"],
+  "shader": "impact_tremor.glsl",
+  "preview": "preview.webp",
+  "parameters": [
+    {
+      "id": "uAmplitude",
+      "name": "Amplitude",
+      "description": "Sets the maximum positional displacement in pixels.",
+      "type": "float",
+      "min": 0.0,
+      "max": 24.0,
+      "default": 8.0
+    },
+    {
+      "id": "uFrequency",
+      "name": "Frequency",
+      "description": "Sets how often the tremor envelope repeats per second.",
+      "type": "float",
+      "min": 0.2,
+      "max": 8.0,
+      "default": 2.5
+    },
+    {
+      "id": "uRotationAmount",
+      "name": "Rotation",
+      "description": "Adds rotational camera movement in radians.",
+      "type": "float",
+      "min": 0.0,
+      "max": 0.18,
+      "default": 0.04
+    },
+    {
+      "id": "uScaleAmount",
+      "name": "Scale",
+      "description": "Adds a small push-in or pull-out during the tremor.",
+      "type": "float",
+      "min": 0.0,
+      "max": 0.18,
+      "default": 0.05
+    },
+    {
+      "id": "uDecay",
+      "name": "Decay",
+      "description": "Controls how quickly each tremor settles after its peak.",
+      "type": "float",
+      "min": 0.2,
+      "max": 10.0,
+      "default": 4.0
+    },
+    {
+      "id": "uSeed",
+      "name": "Pattern Seed",
+      "description": "Changes the deterministic movement pattern without changing its strength.",
+      "type": "float",
+      "min": 0.0,
+      "max": 100.0,
+      "default": 7.0
+    },
+    {
+      "id": "uMix",
+      "name": "Mix",
+      "description": "Blends the displaced frame with the original frame.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0
+    }
+  ],
+  "compatibility": {
+    "minRegistryVersion": 1,
+    "minAppVersion": "1.0.0",
+    "platforms": ["android"],
+    "shaderLanguage": "glsl-es-100",
+    "requiredExtensions": ["GL_OES_EGL_image_external"]
+  }
+}
