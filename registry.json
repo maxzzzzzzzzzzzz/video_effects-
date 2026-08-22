@@ -1,24 +1,12 @@
 {
   "registryVersion": 1,
-  "revision": "2dec1414e4b365ada5610da6945234b1a3f02950",
-  "updatedAt": "2026-08-22T16:35:15+03:00",
+  "revision": "9d3bf554903b1302454c890f521645b599557722",
+  "updatedAt": "2026-08-22T19:01:49+03:00",
   "categories": [
-    {
-      "id": "retro",
-      "name": "Retro"
-    },
-    {
-      "id": "glitch",
-      "name": "Glitch"
-    },
-    {
-      "id": "color",
-      "name": "Color"
-    },
-    {
-      "id": "stylize",
-      "name": "Stylize"
-    }
+    {"id": "retro", "name": "Retro"},
+    {"id": "glitch", "name": "Glitch"},
+    {"id": "color", "name": "Color"},
+    {"id": "stylize", "name": "Stylize"}
   ],
   "effects": [
     {
@@ -27,13 +15,7 @@
       "description": "Retro VHS tape look with horizontal jitter, RGB channel split and scanlines.",
       "version": "1.1.0",
       "category": "retro",
-      "tags": [
-        "vhs",
-        "retro",
-        "analog",
-        "glitch",
-        "scanlines"
-      ],
+      "tags": ["vhs", "retro", "analog", "glitch", "scanlines"],
       "preview": "effects/vhs/preview.webp",
       "metadata": "effects/vhs/effect.json",
       "sha256": {
@@ -48,12 +30,7 @@
       "description": "Digital glitch with block displacement, vertical roll and RGB split.",
       "version": "1.0.0",
       "category": "glitch",
-      "tags": [
-        "glitch",
-        "digital",
-        "distortion",
-        "datamosh"
-      ],
+      "tags": ["glitch", "digital", "distortion", "datamosh"],
       "preview": "effects/glitch/preview.webp",
       "metadata": "effects/glitch/effect.json",
       "sha256": {
@@ -68,13 +45,7 @@
       "description": "Animated film grain with a warm filmic tone and vignette.",
       "version": "1.0.0",
       "category": "retro",
-      "tags": [
-        "film",
-        "grain",
-        "vintage",
-        "vignette",
-        "analog"
-      ],
+      "tags": ["film", "grain", "vintage", "vignette", "analog"],
       "preview": "effects/film_grain/preview.webp",
       "metadata": "effects/film_grain/effect.json",
       "sha256": {
@@ -89,13 +60,7 @@
       "description": "Old CRT monitor look with barrel curvature, phosphor mask, scanlines and flicker.",
       "version": "1.0.0",
       "category": "retro",
-      "tags": [
-        "crt",
-        "retro",
-        "monitor",
-        "scanlines",
-        "phosphor"
-      ],
+      "tags": ["crt", "retro", "monitor", "scanlines", "phosphor"],
       "preview": "effects/crt/preview.webp",
       "metadata": "effects/crt/effect.json",
       "sha256": {
@@ -110,13 +75,7 @@
       "description": "Mosaic pixelation with optional color posterization for a retro-game look.",
       "version": "1.0.0",
       "category": "stylize",
-      "tags": [
-        "pixel",
-        "mosaic",
-        "8bit",
-        "retro",
-        "posterize"
-      ],
+      "tags": ["pixel", "mosaic", "8bit", "retro", "posterize"],
       "preview": "effects/pixelate/preview.webp",
       "metadata": "effects/pixelate/effect.json",
       "sha256": {
@@ -131,13 +90,7 @@
       "description": "Maps video luminance onto a two-color gradient for a bold poster look.",
       "version": "1.0.0",
       "category": "color",
-      "tags": [
-        "duotone",
-        "color",
-        "gradient",
-        "poster",
-        "stylize"
-      ],
+      "tags": ["duotone", "color", "gradient", "poster", "stylize"],
       "preview": "effects/duotone/preview.webp",
       "metadata": "effects/duotone/effect.json",
       "sha256": {
@@ -152,17 +105,14 @@
       "description": "Cinematic highlight bloom that softly diffuses bright areas with an adjustable color halo.",
       "version": "1.0.0",
       "category": "stylize",
-      "tags": [
-        "bloom",
-        "glow",
-        "cinematic",
-        "light",
-        "highlight",
-        "stylize"
-      ],
+      "tags": ["bloom", "glow", "cinematic", "light", "highlight", "stylize"],
       "preview": "effects/prism_bloom/preview.webp",
       "metadata": "effects/prism_bloom/effect.json",
-      "sha256": {}
+      "sha256": {
+        "metadata": "9c41802246a11334af6fc1b4d370f9575c2a39aa49e868c69330f4e7cd541ce0",
+        "shader": "9a89afc7fce99f649e3f29d0aab1268209729f9c72120ae0643507f0fb465739",
+        "preview": "0f36261e10f05e8273b4663c7e2f04a5d8b7dee98ee2e98f67c24612c00c1339"
+      }
     },
     {
       "id": "mirror_orbit",
@@ -170,13 +120,7 @@
       "description": "Animated radial reflection that turns footage into a symmetrical kaleidoscopic pattern.",
       "version": "1.0.0",
       "category": "stylize",
-      "tags": [
-        "kaleidoscope",
-        "mirror",
-        "radial",
-        "psychedelic",
-        "stylize"
-      ],
+      "tags": ["kaleidoscope", "mirror", "radial", "psychedelic", "stylize"],
       "preview": "effects/mirror_orbit/preview.webp",
       "metadata": "effects/mirror_orbit/effect.json",
       "sha256": {}
@@ -187,13 +131,7 @@
       "description": "Directional movement softness that smooths fast pans, zooms, rotations, and animated overlays.",
       "version": "1.0.0",
       "category": "stylize",
-      "tags": [
-        "motion",
-        "blur",
-        "directional",
-        "speed",
-        "action"
-      ],
+      "tags": ["motion", "blur", "directional", "speed", "action"],
       "preview": "effects/velocity_veil/preview.webp",
       "metadata": "effects/velocity_veil/effect.json",
       "sha256": {}
@@ -204,13 +142,7 @@
       "description": "Short controlled camera tremor for beat hits, impacts, title landings, and energetic cuts.",
       "version": "1.0.0",
       "category": "stylize",
-      "tags": [
-        "shake",
-        "impact",
-        "beat",
-        "camera",
-        "energy"
-      ],
+      "tags": ["shake", "impact", "beat", "camera", "energy"],
       "preview": "effects/impact_tremor/preview.webp",
       "metadata": "effects/impact_tremor/effect.json",
       "sha256": {}
@@ -221,13 +153,7 @@
       "description": "Glowing contour treatment that turns strong image edges into colored neon lines.",
       "version": "1.0.0",
       "category": "stylize",
-      "tags": [
-        "neon",
-        "edges",
-        "outline",
-        "glow",
-        "cyberpunk"
-      ],
+      "tags": ["neon", "edges", "outline", "glow", "cyberpunk"],
       "preview": "effects/neon_trace/preview.webp",
       "metadata": "effects/neon_trace/effect.json",
       "sha256": {}
@@ -238,13 +164,7 @@
       "description": "Focal zoom-streak treatment for push-through transitions, beat drops, and energetic scene entrances.",
       "version": "1.0.0",
       "category": "stylize",
-      "tags": [
-        "zoom",
-        "streak",
-        "transition",
-        "radial",
-        "speed"
-      ],
+      "tags": ["zoom", "streak", "transition", "radial", "speed"],
       "preview": "effects/warp_surge/preview.webp",
       "metadata": "effects/warp_surge/effect.json",
       "sha256": {}
