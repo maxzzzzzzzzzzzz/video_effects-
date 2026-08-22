@@ -1,0 +1,82 @@
+{
+  "id": "prism_bloom",
+  "name": "Prism Bloom",
+  "description": "Cinematic highlight bloom that softly diffuses bright areas with an adjustable color halo.",
+  "author": "maxzzzzzzzzzzzz",
+  "license": "Edactor",
+  "version": "1.0.0",
+  "category": "stylize",
+  "tags": ["bloom", "glow", "cinematic", "light", "highlight", "stylize"],
+  "shader": "prism_bloom.glsl",
+  "preview": "preview.webp",
+  "parameters": [
+    {
+      "id": "uThreshold",
+      "name": "Highlight Threshold",
+      "description": "Sets the brightness level at which pixels begin to emit bloom.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.68
+    },
+    {
+      "id": "uDiffusion",
+      "name": "Diffusion",
+      "description": "Controls the radius of the soft light spread in pixels.",
+      "type": "float",
+      "min": 0.0,
+      "max": 40.0,
+      "default": 12.0
+    },
+    {
+      "id": "uIntensity",
+      "name": "Intensity",
+      "description": "Controls the brightness of the bloom over the original image.",
+      "type": "float",
+      "min": 0.0,
+      "max": 2.0,
+      "default": 0.85
+    },
+    {
+      "id": "uColor",
+      "name": "Glow Color",
+      "description": "Sets the color toward which the emitted light is tinted.",
+      "type": "color",
+      "default": [1.0, 0.78, 0.48]
+    },
+    {
+      "id": "uBlend",
+      "name": "Color Blend",
+      "description": "Mixes the source highlight color with the selected glow color.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.35
+    },
+    {
+      "id": "uHalo",
+      "name": "Halo",
+      "description": "Controls the wider, softer ring around the strongest highlights.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.55
+    },
+    {
+      "id": "uAlpha",
+      "name": "Opacity",
+      "description": "Controls the opacity of the bloom layer while preserving the base image.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0
+    }
+  ],
+  "compatibility": {
+    "minRegistryVersion": 1,
+    "minAppVersion": "1.0.0",
+    "platforms": ["android"],
+    "shaderLanguage": "glsl-es-100",
+    "requiredExtensions": ["GL_OES_EGL_image_external"]
+  }
+}

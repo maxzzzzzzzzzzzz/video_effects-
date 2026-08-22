@@ -1,0 +1,82 @@
+{
+  "id": "mirror_orbit",
+  "name": "Mirror Orbit",
+  "description": "Animated radial reflection that turns footage into a symmetrical kaleidoscopic pattern.",
+  "author": "maxzzzzzzzzzzzz",
+  "license": "Edactor",
+  "version": "1.0.0",
+  "category": "stylize",
+  "tags": ["kaleidoscope", "mirror", "radial", "psychedelic", "stylize"],
+  "shader": "mirror_orbit.glsl",
+  "preview": "preview.webp",
+  "parameters": [
+    {
+      "id": "uSegments",
+      "name": "Segments",
+      "description": "Sets the number of repeated radial sections.",
+      "type": "float",
+      "min": 2.0,
+      "max": 24.0,
+      "default": 8.0
+    },
+    {
+      "id": "uCenter",
+      "name": "Center",
+      "description": "Moves the symmetry point across the frame.",
+      "type": "vec2",
+      "default": [0.5, 0.5]
+    },
+    {
+      "id": "uRotation",
+      "name": "Rotation",
+      "description": "Rotates the radial arrangement in radians.",
+      "type": "float",
+      "min": -3.14159265,
+      "max": 3.14159265,
+      "default": 0.0
+    },
+    {
+      "id": "uZoom",
+      "name": "Zoom",
+      "description": "Controls how much of the source image appears inside each sector.",
+      "type": "float",
+      "min": 0.35,
+      "max": 2.5,
+      "default": 1.0
+    },
+    {
+      "id": "uMirrorMode",
+      "name": "Alternate Mirrors",
+      "description": "Alternates reflected and non-reflected sectors when enabled.",
+      "type": "bool",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0
+    },
+    {
+      "id": "uFeather",
+      "name": "Seam Feather",
+      "description": "Softens the boundaries between repeated sectors.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.18
+    },
+    {
+      "id": "uMix",
+      "name": "Mix",
+      "description": "Blends the radial pattern with the original footage.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0
+    }
+  ],
+  "compatibility": {
+    "minRegistryVersion": 1,
+    "minAppVersion": "1.0.0",
+    "platforms": ["android"],
+    "shaderLanguage": "glsl-es-100",
+    "requiredExtensions": ["GL_OES_EGL_image_external"]
+  }
+}
