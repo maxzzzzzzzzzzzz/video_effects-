@@ -4,6 +4,7 @@ Official video effects for video editor app
 ## Structure
 
 - `registry.json` — top-level index the app fetches to discover effects. Each entry has `id`, `name`, `description`, `version`, `preview`, and a `metadata` path to the effect's full definition.
+  - `revision` / `updatedAt` are stamped automatically by CI (`.github/workflows/stamp-revision.yml`) with the commit hash and timestamp on every push to `main` — the app can compare `revision` with a cached value to detect registry updates without any manual version bump.
 - `effects/<id>/effect.json` — full effect metadata (see schema below).
 - `effects/<id>/*.glsl` — the effect's fragment shader.
 - `effects/<id>/preview.webp` — preview image shown in the effect picker.
