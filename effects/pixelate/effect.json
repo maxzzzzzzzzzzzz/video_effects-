@@ -3,7 +3,7 @@
   "name": "Pixelate",
   "description": "Mosaic pixelation with optional color posterization for a retro-game look.",
   "author": "maxzzzzzzzzzzzz",
-  "license": "MIT",
+  "license": "Edactor",
   "version": "1.0.0",
   "category": "stylize",
   "tags": ["pixel", "mosaic", "8bit", "retro", "posterize"],

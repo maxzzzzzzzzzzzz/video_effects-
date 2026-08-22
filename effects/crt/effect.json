@@ -3,7 +3,7 @@
   "name": "CRT",
   "description": "Old CRT monitor look with barrel curvature, phosphor mask, scanlines and flicker.",
   "author": "maxzzzzzzzzzzzz",
-  "license": "MIT",
+  "license": "Edactor",
   "version": "1.0.0",
   "category": "retro",
   "tags": ["crt", "retro", "monitor", "scanlines", "phosphor"],

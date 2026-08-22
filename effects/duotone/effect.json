@@ -3,7 +3,7 @@
   "name": "Duotone",
   "description": "Maps video luminance onto a two-color gradient for a bold poster look.",
   "author": "maxzzzzzzzzzzzz",
-  "license": "MIT",
+  "license": "Edactor",
   "version": "1.0.0",
   "category": "color",
   "tags": ["duotone", "color", "gradient", "poster", "stylize"],

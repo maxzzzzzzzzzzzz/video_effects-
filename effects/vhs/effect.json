@@ -3,7 +3,7 @@
   "name": "VHS",
   "description": "Retro VHS tape look with horizontal jitter, RGB channel split and scanlines.",
   "author": "maxzzzzzzzzzzzz",
-  "license": "MIT",
+  "license": "Edactor",
   "version": "1.1.0",
   "category": "retro",
   "tags": ["vhs", "retro", "analog", "glitch", "scanlines"],

@@ -37,7 +37,7 @@
       "preview": "effects/vhs/preview.webp",
       "metadata": "effects/vhs/effect.json",
       "sha256": {
-        "metadata": "f68bd9472f2e48cc30362ee803ae22608004d36daa924447cea7e7df54605c47",
+        "metadata": "c9ddc3fba559c5da12c8933f7342c792e4c2a608a10f4bb90662129b8f45f2eb",
         "shader": "b7fc6a8ac06d29d06dfbafc20f39ab15e28dbab03a2c5942d63dba3cf1806382",
         "preview": "2fc089e702c2cbd9f66a676703e516c1e840358be807565b56183a7b0b09ba6b"
       }
@@ -57,7 +57,7 @@
       "preview": "effects/glitch/preview.webp",
       "metadata": "effects/glitch/effect.json",
       "sha256": {
-        "metadata": "71bc5cc790db2a1f86401ed7708b349e68437fe384df2c59d0e6ce1442b1bde5",
+        "metadata": "5d71fc8859f5319791ca4ac371e028f71b7040d87e8aa209bc4f6b366951a904",
         "shader": "ef099edb4f33e51d8929eef523ca32afe99d44f31cdfe2ad93c406a8e724adc2",
         "preview": "be0238e766f5d7cc24e8347c11d062d7c87361a1c4d2bead08d13628a505fba4"
       }
@@ -78,7 +78,7 @@
       "preview": "effects/film_grain/preview.webp",
       "metadata": "effects/film_grain/effect.json",
       "sha256": {
-        "metadata": "170e67fa6cc7c54b8a1da908033bbb88cfd2474de0cfc47337ac4e0b1163411a",
+        "metadata": "d7abc0c642ad97924cec5b90a741ec33f64fa31d33ea1fee4d79b0854f09a942",
         "shader": "236b95a5839be172dc13c35886bff52543fceeac2d07d63d18fa5bf1256e7d32",
         "preview": "bd415890e0105392fe5b84141b84056bd8ec72ab6a05650357c58a66770b7927"
       }
@@ -99,7 +99,7 @@
       "preview": "effects/crt/preview.webp",
       "metadata": "effects/crt/effect.json",
       "sha256": {
-        "metadata": "ecc6650ce9259ddd265bc1ac3ea89375b2223281bd76c7a803235f3a7eae5faf",
+        "metadata": "be07d08caadc5061e906a061c306ff099092637a60e0e7c5d4d18ee7d5f44644",
         "shader": "572c91c96a16fa53d8653e9f7d8a2d5abc13a75d45579eb4ba406e9569a37487",
         "preview": "4d56bf96a413f4804368f977d7cc050fec0b8047f02df275666d4c55623fb6b3"
       }
@@ -120,7 +120,7 @@
       "preview": "effects/pixelate/preview.webp",
       "metadata": "effects/pixelate/effect.json",
       "sha256": {
-        "metadata": "6be662fa4fb82a2670c18f62d397a194461a4489caa3677fbbdb694e74c6a57e",
+        "metadata": "0ecf88a179851ab516f78b72804f9a4c3fd22319477b33718802ba5fdf9b5782",
         "shader": "9d9cd67cd3663c918b6d2ccb228ddc26904a940ac7fd188db85d2195b6ccb720",
         "preview": "7c6862e8fc1a28e8767c2b8d57c06671df7a3190211c0662bc393b70d7dd987c"
       }
@@ -141,7 +141,7 @@
       "preview": "effects/duotone/preview.webp",
       "metadata": "effects/duotone/effect.json",
       "sha256": {
-        "metadata": "0837e2edee0d4227fc98bdff62c392c78189cf101b69f7cef1f339275a01ea62",
+        "metadata": "ec120707e738c70c8bfd12fc990a3925058c08a7b071a5bafdb015f48c07e50b",
         "shader": "0433d60787873872625e2fe4473bc6ecc70b383cad9d6820d75b012ccde0a766",
         "preview": "62cb030ec78e6bd59dea5788b76e1f0829432cdc620c882ce490231fec2d16aa"
       }

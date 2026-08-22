@@ -38,7 +38,7 @@ Pushing a tag like `v1.2.0` triggers `.github/workflows/release.yml`, which vali
 | `name` | string | Display name. |
 | `description` | string | Short description shown in the UI. |
 | `author` | string | Effect author. |
-| `license` | string | SPDX license identifier (e.g. `MIT`). |
+| `license` | string | License identifier (e.g. `Edactor` — see the LICENSE file). |
 | `version` | string | Semantic version of the effect (`X.Y.Z`). |
 | `category` | string | Category ID; must be declared in `registry.json` `categories`. |
 | `tags` | array | Free-form search/filter tags. |
