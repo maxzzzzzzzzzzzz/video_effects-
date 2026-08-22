@@ -1,0 +1,82 @@
+{
+  "id": "neon_trace",
+  "name": "Neon Trace",
+  "description": "Glowing contour treatment that turns strong image edges into colored neon lines.",
+  "author": "ozonerepublic74d77777",
+  "license": "Edactor",
+  "version": "1.0.0",
+  "category": "stylize",
+  "tags": ["neon", "edges", "outline", "glow", "cyberpunk"],
+  "shader": "neon_trace.glsl",
+  "preview": "preview.webp",
+  "parameters": [
+    {
+      "id": "uThreshold",
+      "name": "Edge Threshold",
+      "description": "Sets the edge strength required to produce a neon contour.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.22
+    },
+    {
+      "id": "uBlur",
+      "name": "Edge Scale",
+      "description": "Controls the pixel spacing used to detect and soften contours.",
+      "type": "float",
+      "min": 1.0,
+      "max": 8.0,
+      "default": 2.0
+    },
+    {
+      "id": "uSpread",
+      "name": "Glow Spread",
+      "description": "Controls the brightness and thickness of the neon treatment.",
+      "type": "float",
+      "min": 0.0,
+      "max": 2.0,
+      "default": 0.85
+    },
+    {
+      "id": "uColor",
+      "name": "Neon Color",
+      "description": "Sets the color used to draw the glowing contours.",
+      "type": "color",
+      "default": [0.1, 0.8, 1.0]
+    },
+    {
+      "id": "uGamma",
+      "name": "Detail Gamma",
+      "description": "Adjusts tonal sensitivity before edge detection.",
+      "type": "float",
+      "min": 0.5,
+      "max": 2.0,
+      "default": 1.0
+    },
+    {
+      "id": "uInvert",
+      "name": "Invert Mask",
+      "description": "Reverses the contour mask when enabled for an experimental treatment.",
+      "type": "bool",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    {
+      "id": "uAlpha",
+      "name": "Opacity",
+      "description": "Controls the opacity of the neon contour layer.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.9
+    }
+  ],
+  "compatibility": {
+    "minRegistryVersion": 1,
+    "minAppVersion": "1.0.0",
+    "platforms": ["android"],
+    "shaderLanguage": "glsl-es-100",
+    "requiredExtensions": ["GL_OES_EGL_image_external"]
+  }
+}
