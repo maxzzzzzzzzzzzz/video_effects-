@@ -1,0 +1,53 @@
+{
+  "id": "duotone",
+  "name": "Duotone",
+  "description": "Maps video luminance onto a two-color gradient for a bold poster look.",
+  "author": "maxzzzzzzzzzzzz",
+  "license": "MIT",
+  "version": "1.0.0",
+  "category": "color",
+  "tags": ["duotone", "color", "gradient", "poster", "stylize"],
+  "shader": "duotone.glsl",
+  "preview": "preview.webp",
+  "parameters": [
+    {
+      "id": "uIntensity",
+      "name": "Intensity",
+      "description": "Blend between original colors and the duotone look.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0
+    },
+    {
+      "id": "uShadowColor",
+      "name": "Shadow Color",
+      "description": "Color used for dark areas.",
+      "type": "color",
+      "default": [0.05, 0.0, 0.25]
+    },
+    {
+      "id": "uHighlightColor",
+      "name": "Highlight Color",
+      "description": "Color used for bright areas.",
+      "type": "color",
+      "default": [1.0, 0.55, 0.1]
+    },
+    {
+      "id": "uContrast",
+      "name": "Contrast",
+      "description": "Contrast applied to luminance before mapping.",
+      "type": "float",
+      "min": 0.5,
+      "max": 2.0,
+      "default": 1.2
+    }
+  ],
+  "compatibility": {
+    "minRegistryVersion": 1,
+    "minAppVersion": "1.0.0",
+    "platforms": ["android"],
+    "shaderLanguage": "glsl-es-100",
+    "requiredExtensions": ["GL_OES_EGL_image_external"]
+  }
+}

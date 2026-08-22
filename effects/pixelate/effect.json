@@ -1,0 +1,48 @@
+{
+  "id": "pixelate",
+  "name": "Pixelate",
+  "description": "Mosaic pixelation with optional color posterization for a retro-game look.",
+  "author": "maxzzzzzzzzzzzz",
+  "license": "MIT",
+  "version": "1.0.0",
+  "category": "stylize",
+  "tags": ["pixel", "mosaic", "8bit", "retro", "posterize"],
+  "shader": "pixelate.glsl",
+  "preview": "preview.webp",
+  "parameters": [
+    {
+      "id": "uIntensity",
+      "name": "Intensity",
+      "description": "Blend between original and pixelated image.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0
+    },
+    {
+      "id": "uPixelSize",
+      "name": "Pixel Size",
+      "description": "Size of each mosaic pixel in screen pixels.",
+      "type": "float",
+      "min": 2.0,
+      "max": 64.0,
+      "default": 12.0
+    },
+    {
+      "id": "uPosterize",
+      "name": "Posterize",
+      "description": "Reduce colors to a retro palette.",
+      "type": "bool",
+      "min": 0,
+      "max": 1,
+      "default": 0
+    }
+  ],
+  "compatibility": {
+    "minRegistryVersion": 1,
+    "minAppVersion": "1.0.0",
+    "platforms": ["android"],
+    "shaderLanguage": "glsl-es-100",
+    "requiredExtensions": ["GL_OES_EGL_image_external"]
+  }
+}
