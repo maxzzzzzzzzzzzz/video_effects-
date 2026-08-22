@@ -1,0 +1,15 @@
+{
+  "registryVersion": 1,
+  "revision": "",
+  "updatedAt": "",
+  "effects": [
+    {
+      "id": "vhs",
+      "name": "VHS",
+      "description": "Retro VHS tape look with horizontal jitter, RGB channel split and scanlines.",
+      "version": "1.0.0",
+      "preview": "effects/vhs/preview.webp",
+      "metadata": "effects/vhs/effect.json"
+    }
+  ]
+}

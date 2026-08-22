@@ -1,4 +1,28 @@
-{"id": "vhs",
+{
+  "id": "vhs",
   "name": "VHS",
-  "version": "1.0.0"
+  "description": "Retro VHS tape look with horizontal jitter, RGB channel split and scanlines.",
+  "author": "maxzzzzzzzzzzzz",
+  "license": "MIT",
+  "version": "1.0.0",
+  "shader": "vhs_glitch.glsl",
+  "preview": "preview.webp",
+  "parameters": [
+    {
+      "id": "uIntensity",
+      "name": "Intensity",
+      "description": "Overall strength of the VHS distortion.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5
+    }
+  ],
+  "compatibility": {
+    "minRegistryVersion": 1,
+    "minAppVersion": "1.0.0",
+    "platforms": ["android"],
+    "shaderLanguage": "glsl-es-100",
+    "requiredExtensions": ["GL_OES_EGL_image_external"]
+  }
 }
