@@ -1,7 +1,7 @@
 {
   "registryVersion": 1,
-  "revision": "2dec1414e4b365ada5610da6945234b1a3f02950",
-  "updatedAt": "2026-08-22T16:35:15+03:00",
+  "revision": "9d3bf554903b1302454c890f521645b599557722",
+  "updatedAt": "2026-08-22T19:01:49+03:00",
   "categories": [
     {
       "id": "retro",
@@ -162,7 +162,11 @@
       ],
       "preview": "effects/prism_bloom/preview.webp",
       "metadata": "effects/prism_bloom/effect.json",
-      "sha256": {}
+      "sha256": {
+        "metadata": "9c41802246a11334af6fc1b4d370f9575c2a39aa49e868c69330f4e7cd541ce0",
+        "shader": "9a89afc7fce99f649e3f29d0aab1268209729f9c72120ae0643507f0fb465739",
+        "preview": "0f36261e10f05e8273b4663c7e2f04a5d8b7dee98ee2e98f67c24612c00c1339"
+      }
     }
   ]
 }
