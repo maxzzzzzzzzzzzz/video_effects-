@@ -1,0 +1,46 @@
+{
+  "id": "wipe",
+  "name": "Wipe",
+  "description": "Directional wipe that pushes the next clip across the frame at any angle.",
+  "author": "maxzzzzzzzzzzzz",
+  "license": "Edactor",
+  "version": "1.0.0",
+  "category": "wipe",
+  "tags": ["wipe", "slide", "linear", "directional", "reveal"],
+  "shader": "wipe.glsl",
+  "preview": "preview.webp",
+  "previewFrom": "preview_from.webp",
+  "previewTo": "preview_to.webp",
+  "duration": {
+    "default": 500,
+    "min": 150,
+    "max": 3000
+  },
+  "parameters": [
+    {
+      "id": "uAngle",
+      "name": "Angle",
+      "description": "Direction the wipe travels, in degrees (0 = left to right).",
+      "type": "float",
+      "min": 0.0,
+      "max": 360.0,
+      "default": 0.0
+    },
+    {
+      "id": "uSoftness",
+      "name": "Softness",
+      "description": "Feathering of the wipe edge.",
+      "type": "float",
+      "min": 0.01,
+      "max": 1.0,
+      "default": 0.05
+    }
+  ],
+  "compatibility": {
+    "minRegistryVersion": 2,
+    "minAppVersion": "1.1.0",
+    "platforms": ["android"],
+    "shaderLanguage": "glsl-es-100",
+    "requiredExtensions": ["GL_OES_EGL_image_external"]
+  }
+}
