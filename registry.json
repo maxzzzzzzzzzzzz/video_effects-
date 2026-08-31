@@ -1,5 +1,5 @@
 {
-  "registryVersion": 1,
+  "registryVersion": 2,
   "revision": "9d3bf554903b1302454c890f521645b599557722",
   "updatedAt": "2026-08-22T19:01:49+03:00",
   "categories": [
@@ -20,9 +20,28 @@
       "name": "Stylize"
     }
   ],
+  "transitionCategories": [
+    {
+      "id": "dissolve",
+      "name": "Dissolve"
+    },
+    {
+      "id": "wipe",
+      "name": "Wipe"
+    },
+    {
+      "id": "motion",
+      "name": "Motion"
+    },
+    {
+      "id": "glitch",
+      "name": "Glitch"
+    }
+  ],
   "effects": [
     {
       "id": "vhs",
+      "kind": "effect",
       "name": "VHS",
       "description": "Retro VHS tape look with horizontal jitter, RGB channel split and scanlines.",
       "version": "1.1.0",
@@ -44,6 +63,7 @@
     },
     {
       "id": "glitch",
+      "kind": "effect",
       "name": "Glitch",
       "description": "Digital glitch with block displacement, vertical roll and RGB split.",
       "version": "1.0.0",
@@ -64,6 +84,7 @@
     },
     {
       "id": "film_grain",
+      "kind": "effect",
       "name": "Film Grain",
       "description": "Animated film grain with a warm filmic tone and vignette.",
       "version": "1.0.0",
@@ -85,6 +106,7 @@
     },
     {
       "id": "crt",
+      "kind": "effect",
       "name": "CRT",
       "description": "Old CRT monitor look with barrel curvature, phosphor mask, scanlines and flicker.",
       "version": "1.0.0",
@@ -106,6 +128,7 @@
     },
     {
       "id": "pixelate",
+      "kind": "effect",
       "name": "Pixelate",
       "description": "Mosaic pixelation with optional color posterization for a retro-game look.",
       "version": "1.0.0",
@@ -127,6 +150,7 @@
     },
     {
       "id": "duotone",
+      "kind": "effect",
       "name": "Duotone",
       "description": "Maps video luminance onto a two-color gradient for a bold poster look.",
       "version": "1.0.0",
@@ -148,6 +172,7 @@
     },
     {
       "id": "prism_bloom",
+      "kind": "effect",
       "name": "Prism Bloom",
       "description": "Cinematic highlight bloom that softly diffuses bright areas with an adjustable color halo.",
       "version": "1.0.0",
@@ -166,6 +191,62 @@
         "metadata": "9c41802246a11334af6fc1b4d370f9575c2a39aa49e868c69330f4e7cd541ce0",
         "shader": "9a89afc7fce99f649e3f29d0aab1268209729f9c72120ae0643507f0fb465739",
         "preview": "0f36261e10f05e8273b4663c7e2f04a5d8b7dee98ee2e98f67c24612c00c1339"
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "id": "dissolve",
+      "kind": "transition",
+      "name": "Dissolve",
+      "description": "Cross dissolve between two clips, from a clean fade to a grainy film-burn wipe.",
+      "version": "1.0.0",
+      "category": "dissolve",
+      "tags": [
+        "dissolve",
+        "fade",
+        "crossfade",
+        "grain",
+        "smooth"
+      ],
+      "preview": "transitions/dissolve/preview.webp",
+      "previewFrom": "transitions/dissolve/preview_from.webp",
+      "previewTo": "transitions/dissolve/preview_to.webp",
+      "metadata": "transitions/dissolve/transition.json",
+      "defaultDurationMs": 600,
+      "sha256": {
+        "metadata": "13188ad342318e3f86a1ffe16001ee9b580c7196b2ca3ed1f2a87c7bc1a6d248",
+        "shader": "2ea27bb59f18859a2451b4d05efd97e378bd47337fb94e8177fd47c75ab6f805",
+        "preview": "32154623f60d47b8fe595de019d03c01793f76e40459bc643058117f437e8dd0",
+        "previewFrom": "de90220ddb190878265fd5376332f0316f6024f9cd45d2c30313673af61771eb",
+        "previewTo": "ed34df1d650a34d37b341bdd75205b462f3a30bbdd412cc7fe70d864d33689fe"
+      }
+    },
+    {
+      "id": "wipe",
+      "kind": "transition",
+      "name": "Wipe",
+      "description": "Directional wipe that pushes the next clip across the frame at any angle.",
+      "version": "1.0.0",
+      "category": "wipe",
+      "tags": [
+        "wipe",
+        "slide",
+        "linear",
+        "directional",
+        "reveal"
+      ],
+      "preview": "transitions/wipe/preview.webp",
+      "previewFrom": "transitions/wipe/preview_from.webp",
+      "previewTo": "transitions/wipe/preview_to.webp",
+      "metadata": "transitions/wipe/transition.json",
+      "defaultDurationMs": 500,
+      "sha256": {
+        "metadata": "e67cdf64a8f802b417e2cf4de9f1c90ad47b03ef75b92f0013e8156287a77c5a",
+        "shader": "a47f057489ae8ff01c15f631ecd16467c52d9b2e8f8678a2d379039819124232",
+        "preview": "fbbdcbdaeb435afccb0d7c6f6827e06ded6d155165ac95721db8d2205871c2d1",
+        "previewFrom": "de90220ddb190878265fd5376332f0316f6024f9cd45d2c30313673af61771eb",
+        "previewTo": "ed34df1d650a34d37b341bdd75205b462f3a30bbdd412cc7fe70d864d33689fe"
       }
     }
   ]

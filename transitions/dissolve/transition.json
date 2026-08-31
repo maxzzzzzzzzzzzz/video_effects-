@@ -1,0 +1,46 @@
+{
+  "id": "dissolve",
+  "name": "Dissolve",
+  "description": "Cross dissolve between two clips, from a clean fade to a grainy film-burn wipe.",
+  "author": "maxzzzzzzzzzzzz",
+  "license": "Edactor",
+  "version": "1.0.0",
+  "category": "dissolve",
+  "tags": ["dissolve", "fade", "crossfade", "grain", "smooth"],
+  "shader": "dissolve.glsl",
+  "preview": "preview.webp",
+  "previewFrom": "preview_from.webp",
+  "previewTo": "preview_to.webp",
+  "duration": {
+    "default": 600,
+    "min": 150,
+    "max": 4000
+  },
+  "parameters": [
+    {
+      "id": "uSoftness",
+      "name": "Softness",
+      "description": "Width of the blend front; higher values fade more gradually.",
+      "type": "float",
+      "min": 0.01,
+      "max": 1.0,
+      "default": 0.5
+    },
+    {
+      "id": "uGrain",
+      "name": "Grain",
+      "description": "Randomness of the dissolve front, from a plain fade to speckled film burn.",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    }
+  ],
+  "compatibility": {
+    "minRegistryVersion": 2,
+    "minAppVersion": "1.1.0",
+    "platforms": ["android"],
+    "shaderLanguage": "glsl-es-100",
+    "requiredExtensions": ["GL_OES_EGL_image_external"]
+  }
+}

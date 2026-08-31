@@ -20,7 +20,7 @@ jobs:
       - name: Compile all shaders
         run: |
           status=0
-          for f in effects/*/*.glsl; do
+          for f in effects/*/*.glsl transitions/*/*.glsl; do
             echo "== $f"
             glslangValidator -S frag "$f" || status=1
           done

@@ -35,12 +35,16 @@ jobs:
               f.write("\n")
           EOF
 
-      - name: Package effects
+      - name: Package effects and transitions
         run: |
           mkdir -p dist
           for dir in effects/*/; do
             id=$(basename "$dir")
             (cd "$dir" && zip -r "../../dist/${id}.zip" .)
+          done
+          for dir in transitions/*/; do
+            id=$(basename "$dir")
+            (cd "$dir" && zip -r "../../dist/transition-${id}.zip" .)
           done
           cp registry.json dist/
           (cd dist && sha256sum *.zip registry.json > SHA256SUMS.txt)
